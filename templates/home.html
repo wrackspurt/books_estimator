@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Book Popularity Estimator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+</head>
+<body>
+<h1>Book Popularity Estimator</h1>
+<form method="post" action="/">
+<div>
+    <h2>enter the book description:</h2>
+    <input type="text">
+</div>
+<div class="booksDropdown">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <select data-live-search="true" name="genreChoice1" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice2" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice3" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice4" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice5" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice6" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice7" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice8" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice9" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice10" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice11" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice12" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice13" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice14" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+                <select data-live-search="true" name="genreChoice15" class="form-control selectpicker">
+                    <option selected disabled>please, enter a few letters...</option>
+                    {% for g in genresList %}
+                    <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<button type="submit" class="goBtn">let's go</button>
+</form>
+</body>
+</html>
