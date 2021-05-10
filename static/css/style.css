@@ -1,22 +1,96 @@
 @font-face {
-	font-family: 'Bahnschrift';
-    src: url('fonts/font.ttf');
+	font-family: 'Century Gothic';
+    src: url('fonts/century.ttf');
    }
 
+body {
+   background-color: #fff;
+}
 
 h1 {
-  font-family: 'Bahnschrift';
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-size: 200%;
+}
+
+h2 {
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-size: 180%;
+  color: #2e2f36;
 }
 
 h3 {
-  font-family: 'Bahnschrift';
+  font-family: 'Century Gothic';
+  font-size: 170%;
+  color: #2e2f36;
 }
 
 p {
-  font-family: 'Bahnschrift';
+  font-family: 'Century Gothic';
+  color: #2e2f36;
 }
 
 .form-group {
    width:400px;
-   font-family: 'Bahnschrift';
+   font-family: 'Century Gothic';
+   margin-top: 3%;
+   color: #2e2f36;
+}
+
+#bookDesc {
+   font-family: 'Century Gothic';
+   height: 200px;
+   width: 600px;
+   color: #2e2f36;
+}
+
+.desc {
+   margin-top: 3%;
+}
+
+.resultBtn {
+   margin-top: 3%;
+}
+
+.title {
+   margin-top: 6%;
+   margin-bottom: 3%;
+}
+
+.result {
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #2e2f36;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.goBtn {
+   background-color: #2e2f36;
+   color: white;
+   border-radius: 4px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+
+.goBtn:hover {
+   background-color: white;
+   color: black;
+   border: 2px solid #2e2f36;
+}
+
+.errorRes {
+   color: #FF2047;
+}
+
+
+.res {
+   color: #279f00;
 }

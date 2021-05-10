@@ -8,21 +8,24 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/60990fc9a5ef4.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<h1 align="center">Book Popularity Estimator</h1>
+<div class="header"><h1 align="center">BOOK POPULARITY ESTIMATOR</h1></div>
+<div class="title"><h2 align="center">Looking for the easiest way to find out the potential book popularity?</h2>
+<h2 align="center">Just follow the instructions below.</h2></div>
 <form method="post" action="/">
-<div align="center">
+<div align="center" class="desc">
     <h3>1. Enter the book description:</h3>
-    <input type="text" name="description">
+    <textarea name="description" id="bookDesc" spellcheck="true"></textarea>
 </div>
 <div class="booksDropdown" align="center">
-    <h3 align="center">2. Choose at least one genre:</h3>
     <div class="row">
         <div class="col-lg-12">
             <div class="form-group">
-                <select data-live-search="true" name="genreChoice1" class="form-control selectpicker">
+                <h3 align="center">2. Choose at least one genre:</h3>
+                <select data-live-search="true" name="genreChoice1" class="form-control selectpicker" id="genre1">
                     <option selected disabled>please, enter a few letters...</option>
                     {% for g in genresList %}
                     <option value="{{ g }}">{{ g }}</option>
@@ -116,18 +119,21 @@
         </div>
     </div>
 </div>
-<div align="center">
+<div class="resultBtn" align="center">
     <h3>3. <button type="submit" class="goBtn">Press me</button> and scroll down to see the result</h3>
 </div>
 </form>
-{% if enter_error %}
-<p align="center">{{ enter_error }}</p>
-{% endif %}
-{% if emo_error %}
-<p align="center">{{ emo_error }}</p>
-{% endif %}
-{% if result %}
-<p align="center">The expected rating of the book is {{ result }}</p>
-{% endif %}
+<div class="result">
+    {% if enter_error %}
+    <p align="center" class="errorRes">{{ enter_error[0] }}</p>
+    <p align="center" class="errorRes">{{ enter_error[1] }}</p>
+    {% endif %}
+    {% if emo_error %}
+    <p align="center" class="errorRes">{{ emo_error }}</p>
+    {% endif %}
+    {% if result %}
+    <p align="center" class="res">The expected rating of the book is {{ result }}</p>
+    {% endif %}
+</div>
 </body>
 </html>

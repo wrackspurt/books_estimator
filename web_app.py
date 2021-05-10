@@ -46,9 +46,8 @@ def post_results():
             genres_error = 'please, choose at least one genre'
             print(genres_error)"""
     if len(book_desc) == 0 or len(ug_list) == 0:
-        enter_error = "It seems like you have not entered the book description and/or " +\
-                      "you have not chosen at least one genre. Please, specify both " + \
-                      "the book description and the genres to get the prediction."
+        enter_error = ["It seems like you have not entered the book description and/or you have not chosen at least one genre.",
+                       "Please, specify both the book description and the genres to get the prediction."]
         return render_template('home.html', enter_error=enter_error, genresList=genres)
     else:
         emotions = te.get_emotion(book_desc)
