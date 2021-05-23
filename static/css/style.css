@@ -26,6 +26,13 @@ h3 {
   color: #2e2f36;
 }
 
+h4 {
+  font-family: 'Century Gothic';
+  font-size: 80%;
+  font-style: italic;
+  color: #2e2f36;
+}
+
 p {
   font-family: 'Century Gothic';
   color: #2e2f36;
